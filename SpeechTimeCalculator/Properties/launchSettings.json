@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SpeechTimeCalculator": {
+      "commandName": "Project",
+      "commandLineArgs": "\"C:\\Users\\Javi\\Downloads\\test2Conv4WithCutFinal.Table.txt\""
+    }
+  }
+}
