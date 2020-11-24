@@ -2,7 +2,7 @@
   "profiles": {
     "SpeechTimeCalculator": {
       "commandName": "Project",
-      "commandLineArgs": "\"C:\\Users\\Javi\\Downloads\\test2Conv4WithCutFinal.Table.txt\""
+      "commandLineArgs": "\"C:\\Users\\Javi\\Downloads\\tester9Final.Table\""
     }
   }
 }

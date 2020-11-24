@@ -30,7 +30,7 @@ namespace SpeechTimeCalculator
             }
             catch (Exception e1)
             {
-                PrintToUser(e1.ToString(), true);
+                PrintToUser(e1.Message, true);
             }
         }
 
@@ -43,6 +43,9 @@ namespace SpeechTimeCalculator
                     continue;
 
                 Row row = Row.ReadLine(lines[i]);
+                if (row == null)
+                    throw new Exception($"Line [{lines[i]}] is not OK. Please check it has all the values");
+
                 Rows.Add(row);
             }
 
@@ -83,7 +86,9 @@ namespace SpeechTimeCalculator
 
         static void PrintToUser(string message, bool waitForUserInput = false)
         {
+            Console.WriteLine();
             Console.WriteLine(message);
+            Console.WriteLine();
 
             if (waitForUserInput)
             {
